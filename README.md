@@ -1,5 +1,7 @@
 # LOGIWISE · 물류 성과관리 자율 모니터링 AI Agent
 
+> 🔁 **재현본**: 이 저장소의 [Claude Code 가이드](docs/CLAUDE_CODE_GUIDE.md)만으로 새 폴더에서 다시 만든 결과물은 [logiwise-agent-repro](https://github.com/rockdawayne-ship-it/logiwise-agent-repro) 에 있다. 재현 과정에서 찾은 결함은 [docs/REPRO_REPORT.md](docs/REPRO_REPORT.md) 참고.
+
 「물류 성과관리 대시보드 개발 PRD」를 바탕으로 처음부터 다시 설계한 교육용 로컬 웹앱입니다.
 PRD의 본사·센터 대시보드와 지시 워크플로우 위에 **자율 모니터링 에이전트**를 얹었습니다.
 
