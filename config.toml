@@ -1,0 +1,34 @@
+[database]
+path = "data/logiwise.db"
+
+[agent]
+# 빈 문자열이면 Claude Code CLI 기본 모델을 사용합니다. 예: "claude-opus-5-5"
+model = "claude-sonnet-5-5"
+# low | medium | high | xhigh | max
+effort = "medium"
+max_turns = 12
+timeout_seconds = 180
+# Claude Code CLI 실행 파일 경로. 빈 문자열이면 PATH에서 찾습니다.
+cli_path = ""
+
+[monitor]
+# 자동 스캔 주기(초)
+interval_seconds = 300
+# 같은 센터·같은 이상 상태로 이미 대기 중인 초안이 있으면 에이전트를 다시 호출하지 않습니다.
+dedupe = true
+# 한 사이클에 에이전트에게 넘길 최대 센터 수
+max_centers_per_cycle = 3
+
+[rules]
+# PRD 기준
+on_time_target = 97
+inbound_bottleneck_qty = 3
+outbound_bottleneck_qty = 5
+heatmap_warn_min = 1
+heatmap_danger_min = 4
+# PRD에 없어 보완한 등급 기준
+danger_on_time = 95
+danger_anomaly_count = 4
+# 이벤트 지연 기준(시간)
+event_delay_warn_hours = 0
+event_delay_danger_hours = 24
